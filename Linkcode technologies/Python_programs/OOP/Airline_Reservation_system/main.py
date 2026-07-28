@@ -1,4 +1,5 @@
 from Admin.admin import admin
+from user.user import user
 
 while True:
 
@@ -14,11 +15,11 @@ while True:
         a.admin_panel()
 
     elif choice == 2:
-        # User Panel
-        pass
+        u = user()
+        u.user_panel()
 
     elif choice == 3:
-        print("Thank You...")
+        print("Thank You!")
         break
 
     else:
