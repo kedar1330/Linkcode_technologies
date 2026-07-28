@@ -1,9 +1,6 @@
-from Admin.models.passenger import passenger
-
-
+from models.passenger import passenger
 class passenger_services:
-    pass
-
+    pass 
     def __init__(self):
         self.passenger_list = []
 

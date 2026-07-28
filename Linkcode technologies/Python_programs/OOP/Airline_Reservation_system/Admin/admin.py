@@ -1,10 +1,10 @@
-from services.flight_services import flight_services
-from services.passenger_services import passenger_services
-from services.booking_services import booking_services
+from Admin.services.flight_services import flight_services
+from Admin.services.passenger_services import passenger_services
+from Admin.services.booking_services import booking_services
 
-from utils.flight_menu import flight_menu
-from utils.passenger_menu import passenger_menu
-from utils.booking_menu import booking_menu
+from Admin.utils.flight_menu import flight_menu
+from Admin.utils.passenger_menu import passenger_menu
+from Admin.utils.booking_menu import booking_menu
 
 
 class admin:

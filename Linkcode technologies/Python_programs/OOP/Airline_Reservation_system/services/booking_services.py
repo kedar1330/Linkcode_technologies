@@ -1,6 +1,4 @@
-from Admin.models.booking import booking
-
-
+from models.booking import booking
 class booking_services:
     pass
 
