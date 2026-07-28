@@ -25,7 +25,7 @@ class flight_services:
         ch=int(input("Enter your choice(1.Update_flight\n2.Don't update)"))
         if ch==1:
             pass
-            flight_no=input("Enter the flight_no you want to update details")
+            flight_no=int(input("Enter the flight_no you want to update details"))
             for f in self.flight_list:
                 if f.flight_no==flight_no:
                     pass
@@ -71,7 +71,7 @@ class flight_services:
 
         print("Flight Not Found")
 
-        
+
                              
 
     
