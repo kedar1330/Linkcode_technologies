@@ -1,4 +1,4 @@
-from models.flight import flight
+from Admin.models.flight import flight
 class flight_services:
     pass
     def __init__(self):
@@ -39,7 +39,39 @@ class flight_services:
                     f.Total_seats=total_seats
                 
         else:
-            print("Okay!!!!!!")    
+            print("Okay!!!!!!")  
+
+    def search_flight(self):
+        if len(self.flight_list) == 0:
+            print("No Flights Available")
+            return
+
+        flight_no = int(input("Enter Flight Number to Search: "))
+
+        for f in self.flight_list:
+            if f.flight_no == flight_no:
+                print("\nFlight Found Successfully")
+                f.display()
+                return
+
+        print("Flight Not Found")  
+
+    def delete_flight(self):
+        if len(self.flight_list) == 0:
+            print("No Flights Available")
+            return
+
+        flight_no = int(input("Enter Flight Number to Delete: "))
+
+        for f in self.flight_list:
+            if f.flight_no == flight_no:
+                self.flight_list.remove(f)
+                print("Flight Deleted Successfully")
+                return
+
+        print("Flight Not Found")
+
+        
                              
 
     
