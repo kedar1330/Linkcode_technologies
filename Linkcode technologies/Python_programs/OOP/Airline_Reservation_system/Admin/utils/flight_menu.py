@@ -1,6 +1,13 @@
-from services.flight_services import flight_services
-fs=flight_services()
-fs.add_flight()
-fs.view_flight()
-fs.update_flight()
+def flight_menu():
+    print("\n" + "=" * 55)
+    print("                FLIGHT MANAGEMENT")
+    print("=" * 55)
 
+    print("1. Add Flight")
+    print("2. Update Flight")
+    print("3. Delete Flight")
+    print("4. View Flights")
+    print("5. Search Flight")
+    print("6. Back to Admin Panel")
+
+    print("=" * 55)
