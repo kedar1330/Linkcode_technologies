@@ -6,7 +6,7 @@ cursor=conn.cursor()
 #table create
 cursor.execute("""
   create table if not exists grocery(
-  id int primary key,
+  id int PRIMARY KEY,
   name text not null,
   brand text not null,
   SP int not null,
@@ -15,7 +15,20 @@ cursor.execute("""
   )
 
 """)
-print("table created")
+# Create Cart Table
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS cart(
+    id INTEGER,
+    name TEXT NOT NULL,
+    price INTEGER NOT NULL,
+    qty INTEGER NOT NULL,
+    total INTEGER NOT NULL
+)
+""")
 
+# Save changes
+conn.commit()
+
+print("Tables created successfully!")
 
 
